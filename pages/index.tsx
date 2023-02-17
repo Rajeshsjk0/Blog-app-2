@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { WebsiteLayout } from "@/layouts";
+import HomeScreen from "@/screens/home";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <WebsiteLayout>
-        <h2>home</h2>
+        <HomeScreen />
       </WebsiteLayout>
     </>
   );
