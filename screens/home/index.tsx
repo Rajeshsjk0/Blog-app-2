@@ -1,6 +1,6 @@
 import { calc, Flex, VStack } from "@chakra-ui/react";
 import React from "react";
-import { Hero } from "./components";
+import { Categories, Hero, SectionMagazine } from "./components";
 
 const HomeScreen = () => {
   return (
@@ -12,9 +12,11 @@ const HomeScreen = () => {
       w={"calc(100% - 11.119%)"}
       marginLeft="5.56%"
       marginRight="5.559%"
-      backgroundColor="blue"
+      // backgroundColor="blue"
     >
       <Hero />
+      <Categories />
+      <SectionMagazine />
     </Flex>
   );
 };
