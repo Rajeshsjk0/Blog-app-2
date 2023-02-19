@@ -1,6 +1,6 @@
 import { calc, Flex, VStack } from "@chakra-ui/react";
 import React from "react";
-import { Categories, Hero, SectionMagazine } from "./components";
+import { Categories, Hero, SectionMagazine, Videos } from "./components";
 
 const HomeScreen = () => {
   return (
@@ -17,6 +17,7 @@ const HomeScreen = () => {
       <Hero />
       <Categories />
       <SectionMagazine />
+      <Videos />
     </Flex>
   );
 };
