@@ -1,4 +1,4 @@
-import { Box, Card, Flex, Image } from "@chakra-ui/react";
+import { Avatar, Box, Card, Flex } from "@chakra-ui/react";
 
 type Props = {
   width: string;
@@ -9,10 +9,10 @@ type Props = {
     items: string;
     image: string;
   };
-  key: number;
+  keyId: number;
 };
 
-const CategoryCard = ({ width, content, key, imageHeight }: Props) => {
+const CategoryCard = ({ width, content, keyId, imageHeight }: Props) => {
   return (
     <Card
       w={width}
@@ -20,7 +20,7 @@ const CategoryCard = ({ width, content, key, imageHeight }: Props) => {
       borderRadius={"24px"}
       border={"1px solid #E5E7EB"}
       backgroundColor={"#FFFFFF"}
-      key={key}
+      key={keyId}
       display={"flex"}
       flexDirection="column"
       justifyContent={"center"}
@@ -29,11 +29,11 @@ const CategoryCard = ({ width, content, key, imageHeight }: Props) => {
       paddingBottom="24px"
     >
       <Box h={imageHeight} w="33.81%">
-        <Image
+        <Avatar
           w={"100%"}
           h="100%"
           src={content.image}
-          alt="Category"
+          name="Category"
           borderRadius="50%"
         />
       </Box>

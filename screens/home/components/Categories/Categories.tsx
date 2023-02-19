@@ -16,7 +16,7 @@ const Categories = () => {
         width="18.5%"
         content={content}
         imageHeight="80px"
-        key={i}
+        keyId={i}
       />
     );
   }
@@ -28,7 +28,7 @@ const Categories = () => {
         width="15.1%"
         imageHeight="70px"
         content={content}
-        key={i}
+        keyId={i}
       />
     );
   }

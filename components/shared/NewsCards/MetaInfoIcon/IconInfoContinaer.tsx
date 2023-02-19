@@ -8,7 +8,7 @@ import {
 } from "@fluentui/react-icons";
 import React from "react";
 
-const MetaInfoIcon = () => {
+const IconInfoContainer = () => {
   return (
     <Flex gap={"32px"} alignItems="center" justifyContent={"center"} h="32px">
       <Flex
@@ -75,4 +75,4 @@ const MetaInfoIcon = () => {
   );
 };
 
-export default MetaInfoIcon;
+export default IconInfoContainer;

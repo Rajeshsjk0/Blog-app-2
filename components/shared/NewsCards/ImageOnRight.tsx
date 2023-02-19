@@ -1,15 +1,7 @@
 import React from "react";
-import {
-  Card,
-  Flex,
-  Badge,
-  Text,
-  Box,
-  Heading,
-  Avatar,
-  Image,
-} from "@chakra-ui/react";
-import MetaInfoIcon from "./MetaInfoIcon";
+import { Card, Flex, Badge, Box, Heading, Image } from "@chakra-ui/react";
+import MetaInfoIcon from "./MetaInfoIcon/IconInfoContinaer";
+import UserInfo from "./UserInfoContainer/UserInfo";
 
 const RightCard = (props: any) => {
   return (
@@ -31,31 +23,12 @@ const RightCard = (props: any) => {
             Start a blog to reach your creative peak. Start a blog to reach your
             creative peak
           </Heading>
-          <Flex paddingBottom={"12px"}>
-            <Avatar
-              padding={"0PX"}
-              name="Dan Abrahmov"
-              src="https://bit.ly/dan-abramov"
-            />
-            <Flex
-              direction={"column"}
-              paddingLeft="8px"
-              justifyContent={"center"}
-            >
-              <Heading
-                fontSize="14px"
-                color={"#374151"}
-                fontFamily="Poppins"
-                fontWeight="500"
-                paddingBottom={"4px"}
-              >
-                Joinh Davide
-              </Heading>
-              <Text fontSize="12px" color="#6B7280">
-                May 20, 2021 · 3 min read
-              </Text>
-            </Flex>
-          </Flex>
+          <UserInfo
+            style={{}}
+            image="https://bit.ly/dan-abramov"
+            userName="Joinh Davide"
+            date="May 20, 2021 · 3 min read"
+          />
           <Flex height={"36px"} paddingBottom="20px">
             <MetaInfoIcon />
           </Flex>

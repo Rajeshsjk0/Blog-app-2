@@ -11,10 +11,10 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
-import RightCard from "./RightCard";
-import BottomCard from "./BottomCard";
+import { NewsCardWithRightImage } from "@/components/index";
+import { NewsCardWithTopImage } from "@/components/index";
 import { ArrowRight12Filled } from "@fluentui/react-icons";
-import MetaInfoIcon from "./MetaInfoIcon";
+import MetaInfoIcon from "@/components/shared/NewsCards/MetaInfoIcon/IconInfoContinaer";
 
 const Trending = () => {
   const trendingMenuStyle = {
@@ -192,24 +192,24 @@ const Trending = () => {
             </Flex>
           </Flex>
           <Flex w={"49%"} direction="column">
-            <RightCard style={{ paddingBottom: "20px" }} />
-            <RightCard style={{ paddingBottom: "20px" }} />
-            <RightCard />
+            <NewsCardWithRightImage style={{ paddingBottom: "20px" }} />
+            <NewsCardWithRightImage style={{ paddingBottom: "20px" }} />
+            <NewsCardWithRightImage />
           </Flex>
         </Flex>
         <Box paddingTop={"20px"}>
           <Grid templateColumns="repeat(4, 1fr)" gap={6}>
             <GridItem>
-              <BottomCard />
+              <NewsCardWithTopImage />
             </GridItem>
             <GridItem>
-              <BottomCard />
+              <NewsCardWithTopImage />
             </GridItem>
             <GridItem>
-              <BottomCard />
+              <NewsCardWithTopImage />
             </GridItem>
             <GridItem>
-              <BottomCard />
+              <NewsCardWithTopImage />
             </GridItem>
           </Grid>
         </Box>

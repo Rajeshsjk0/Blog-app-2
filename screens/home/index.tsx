@@ -1,6 +1,7 @@
-import { calc, Flex, VStack } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import React from "react";
 import { Categories, Hero, SectionMagazine, Videos } from "./components";
+import SectionVerticals from "./components/Sections/SectionVerticals";
 
 const HomeScreen = () => {
   return (
@@ -18,6 +19,7 @@ const HomeScreen = () => {
       <Categories />
       <SectionMagazine />
       <Videos />
+      <SectionVerticals />
     </Flex>
   );
 };
