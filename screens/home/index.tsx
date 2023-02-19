@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import React from "react";
-import { Categories, Hero, SectionMagazine, Videos } from "./components";
+import { Categories, Hero, Hero1, SectionMagazine, Videos } from "./components";
 import SectionVerticals from "./components/Sections/SectionVerticals";
 
 const HomeScreen = () => {
