@@ -10,7 +10,7 @@ import ListHeader from "./ListHeader";
 export default function Footer() {
   return (
     <Box marginLeft="5.56%" marginRight="5.559%">
-      <Container
+      <Box
         as={Stack}
         maxW={"6xl"}
         // py={10}
@@ -179,7 +179,7 @@ export default function Footer() {
             <LinkStyled prop1={"#"}>Software Developer</LinkStyled>
           </Stack>
         </SimpleGrid>
-      </Container>
+      </Box>
     </Box>
   );
 }

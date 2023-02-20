@@ -6,7 +6,7 @@ import {
   Box,
   Button,
   Image,
-  Badge,
+  Tag,
   Avatar,
   Grid,
   GridItem,
@@ -35,7 +35,6 @@ const Trending = () => {
         size="lg"
         fontSize="36px"
         color={"#1F2937"}
-        fontFamily="Poppins"
         fontWeight="600"
         paddingBottom={"8px"}
       >
@@ -110,39 +109,32 @@ const Trending = () => {
             w={"49%"}
             direction="column"
             border={"1px solid #E5E7EB"}
-            borderRadius={"16px"}
+            borderRadius={"24px"}
           >
             <Image
               src="https://thumbs.dreamstime.com/b/man-silhouette-stand-alone-beach-watching-romantic-colorful-sunset-73828239.jpg"
               alt="Hero Section"
               width="100%"
               height="388px"
+              borderTopRadius={"24px"}
             />
             <Box w={"100%"} padding="20px">
-              <Badge
+              <Tag
                 borderRadius={"10px"}
                 fontSize="12px"
                 marginRight={"8px"}
-                padding="2px 10px"
                 colorScheme="red"
               >
                 Travel
-              </Badge>
-              <Badge
-                borderRadius={"10px"}
-                fontSize="12px"
-                padding="2px 10px"
-                colorScheme="green"
-              >
+              </Tag>
+              <Tag borderRadius={"10px"} fontSize="12px" colorScheme="green">
                 Tech
-              </Badge>
+              </Tag>
             </Box>
             <Heading
               paddingLeft={"20px"}
-              width={"55%"}
               fontSize="24px"
               color={"#111827"}
-              fontFamily="Poppins"
               fontWeight="600"
               lineHeight={"32px"}
               paddingBottom={"8px"}
@@ -171,7 +163,6 @@ const Trending = () => {
                 <Heading
                   fontSize="14px"
                   color={"#374151"}
-                  fontFamily="Poppins"
                   fontWeight="500"
                   paddingBottom={"4px"}
                 >

@@ -81,7 +81,6 @@ const SectionVerticals: React.FC = () => {
         <Text
           w={"100%"}
           fontStyle="normal"
-          fontFamily={"Poppins"}
           fontWeight="400"
           fontSize="18px"
           lineHeight={"28px"}

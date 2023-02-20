@@ -49,11 +49,11 @@ const CategoryCard = ({ width, content, keyId, imageHeight }: Props) => {
           justifyContent={"center"}
           alignItems={"Center"}
           fontStyle="normal"
-          fontFamily={"Poppins"}
           fontWeight="600"
           fontSize="18px"
           lineHeight={"28px"}
           color="#1F2937"
+          marginTop={3}
         >
           {content.heading}
         </Flex>

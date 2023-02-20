@@ -75,11 +75,11 @@ const Categories = () => {
         paddingTop={"30px"}
         w={"100%"}
         flexWrap={"wrap"}
-        justifyContent="flex-start"
+        justifyContent="space-between"
+        alignItems={"center"}
         direction={"row"}
-        gap="24px"
       >
-        {renderedItems2}
+        {renderedItems1}
       </Flex>
     </Box>
   );

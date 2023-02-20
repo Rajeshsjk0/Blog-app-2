@@ -9,16 +9,15 @@ const HomeScreen = () => {
       flexDirection="column"
       alignItems="center"
       justifyContent="center"
-      padding={0}
-      w={"calc(100% - 11.119%)"}
-      marginLeft="5.56%"
-      marginRight="5.559%"
-      // backgroundColor="blue"
+      padding={"5%"}
+      // w={"calc(100% - 11.119%)"}
+      // marginLeft="5.56%"
+      // marginRight="5.559%"
     >
       <Hero />
       <Categories />
       <SectionMagazine />
-      <Videos />
+      {/* <Videos /> */}
       <SectionVerticals />
     </Flex>
   );

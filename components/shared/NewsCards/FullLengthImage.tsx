@@ -1,5 +1,5 @@
 import React, { CSSProperties } from "react";
-import { Card, Flex, Badge, Box, Heading, Image } from "@chakra-ui/react";
+import { Card, Flex, Tag, Box, Heading, Image } from "@chakra-ui/react";
 import UserInfo from "./UserInfoContainer/UserInfo";
 
 interface ChildComponentProps {
@@ -21,15 +21,23 @@ const FullLengthImage: React.FC<ChildComponentProps> = (props) => {
       bgSize="cover"
       bgRepeat="no-repeat"
       // backgroundColor="transparent"
-      borderRadius="25px"
       w={"23.57%"}
       // h={"500px"}
+      borderRadius={24}
     >
-      <Card direction="column" mt="213px" ml="12px" mr="12px" mb={"12px"}>
+      <Card
+        direction="column"
+        mt="213px"
+        ml="12px"
+        mr="12px"
+        mb={"12px"}
+        padding={3}
+        borderRadius={"25px"}
+      >
         <Box paddingBottom={"14px"}>
-          <Badge borderRadius={"10px"} fontSize="12px" colorScheme="green">
+          <Tag borderRadius={"10px"} fontSize="12px" colorScheme="green">
             Tech
-          </Badge>
+          </Tag>
         </Box>
         <Heading
           fontSize="16px"

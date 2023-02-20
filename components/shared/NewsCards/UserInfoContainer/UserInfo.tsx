@@ -17,7 +17,6 @@ const UserInfo: React.FC<ChildComponentProps> = (props) => {
         <Heading
           fontSize="14px"
           color={"#374151"}
-          fontFamily="Poppins"
           fontWeight="500"
           paddingBottom={"4px"}
         >
