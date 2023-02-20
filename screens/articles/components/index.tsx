@@ -1,4 +1,4 @@
-import { ArticleHeader } from "./SearchSection";
-import { ArticleList } from "./ArticleList";
+import { ArticleHeader, ArticleList, Subscribe } from "./ArticleList";
 import { DetailsHeader, DetailsSection , Options } from "./ArticleDetails";
-export { ArticleHeader, ArticleList, DetailsHeader, DetailsSection, Options };
+import {Categories} from "./Categories";
+export { ArticleHeader, ArticleList, DetailsHeader, DetailsSection, Options, Subscribe , Categories};

@@ -3,4 +3,5 @@ export const colors = {
   heading: "#111827",
   subHeading: "#374151",
   paragraphs: "#6B7280",
+  greyBackground : "#F3F4F6"
 };

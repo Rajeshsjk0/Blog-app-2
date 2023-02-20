@@ -18,7 +18,7 @@ const Categories = () => {
   };
 
   return (
-    <Box w={"100%"} marginTop={110} padding={10}>
+    <Box w={"100%"} bg="greyBackground" padding={10}>
       <VStack spacing={5}>
         <Heading
           display="flex"
@@ -27,7 +27,7 @@ const Categories = () => {
           fontSize={"36px"}
           color="heading"
         >
-          Discover categories{" "}
+          Categories
         </Heading>
         <Text
           display="flex"

@@ -6,7 +6,7 @@ import UserInfo from "./UserInfoContainer/UserInfo";
 const RightCard = (props: any) => {
   return (
     <div style={props.style}>
-      <Card direction={"row"} padding={"16px"} borderRadius={24}>
+      <Card direction={"row"} padding={"16px"} borderRadius={16}>
         <HStack spacing={5}>
           <Flex direction={"column"} w={"70%"}>
             <Box paddingBottom={"14px"}>

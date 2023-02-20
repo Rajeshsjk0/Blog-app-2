@@ -23,7 +23,7 @@ import {
 
 export default function Article() {
   return (
-    <VStack spacing={5}>
+    <VStack spacing={5} padding={5}>
       <Text>
         We’re an online magazine dedicated to covering the best in international
         product design. We started as a little blog back in 2002 covering
@@ -45,7 +45,7 @@ export default function Article() {
         and over time
       </Text>
       <Image
-        src="https://thumbs.dreamstime.com/b/man-silhouette-stand-alone-beach-watching-romantic-colorful-sunset-73828239.jpg"
+        src="https://s3.envato.com/files/295374879/IMG_9449.jpg"
         alt="Hero Section"
         width="100%"
       />
@@ -70,7 +70,7 @@ export default function Article() {
         and over time
       </Text>
       <Image
-        src="https://thumbs.dreamstime.com/b/man-silhouette-stand-alone-beach-watching-romantic-colorful-sunset-73828239.jpg"
+        src="https://s3.envato.com/files/295374879/IMG_9449.jpg"
         alt="Hero Section"
         width="100%"
       />

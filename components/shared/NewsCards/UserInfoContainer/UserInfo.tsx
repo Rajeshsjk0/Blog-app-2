@@ -16,13 +16,13 @@ const UserInfo: React.FC<ChildComponentProps> = (props) => {
       <Flex direction={"column"} paddingLeft="8px" justifyContent={"center"}>
         <Heading
           fontSize="14px"
-          color={"#374151"}
+          color={"heading"}
           fontWeight="500"
           paddingBottom={"4px"}
         >
           {userName}
         </Heading>
-        <Text fontSize="12px" color="#6B7280">
+        <Text fontSize="12px" color="subHeading">
           {date}
         </Text>
       </Flex>
