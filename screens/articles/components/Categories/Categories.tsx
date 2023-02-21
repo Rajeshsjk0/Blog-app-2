@@ -18,7 +18,7 @@ const Categories = () => {
   };
 
   return (
-    <Box w={"100%"} bg="greyBackground" padding={10}>
+    <Box w={"100%"} bg="greyColor" padding={10}>
       <VStack spacing={5}>
         <Heading
           display="flex"
