@@ -137,7 +137,7 @@ export default function Footer() {
           <Stack align={"flex-start"}>
             <ListHeader>Use Cases</ListHeader>
             <LinkStyled prop1={"#"}>Abstergo Ltd.</LinkStyled>
-            <LinkStyled prop1={"#"}>'Nursing Assistant</LinkStyled>
+            <LinkStyled prop1={"#"}>Nursing Assistant</LinkStyled>
             <LinkStyled prop1={"#"}>Medical Assistant</LinkStyled>
             <LinkStyled prop1={"#"}>Marketing Coordinator</LinkStyled>
             <LinkStyled prop1={"#"}>Dog Trainer</LinkStyled>
