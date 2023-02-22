@@ -4,13 +4,13 @@ import UserInfo from "./UserInfoContainer/UserInfo";
 
 const ImageOnTop = () => {
   return (
-    <Card borderRadius={24}>
+    <Card borderRadius={16}>
       <Image
         src="https://thumbs.dreamstime.com/b/man-silhouette-stand-alone-beach-watching-romantic-colorful-sunset-73828239.jpg"
         alt="Hero Section"
         width="100%"
         height={"175px"}
-        borderTopRadius={24}
+        borderTopRadius={16}
       />
       <Box padding={"12px"}>
         <Tag borderRadius={"10px"} fontSize="12px" colorScheme="green">

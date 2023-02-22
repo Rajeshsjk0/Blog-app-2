@@ -20,7 +20,7 @@ const Trending = () => {
   const trendingMenuStyle = {
     display: "inline-block",
     padding: "12px 21px",
-    color: "#4B5563",
+    color: "subHeading",
     fontSize: "16px",
     cursor: "pointer",
   };
@@ -29,7 +29,7 @@ const Trending = () => {
       w="100%"
       direction={"column"}
       borderRadius="40px"
-      paddingTop={"194px"}
+      paddingTop={"20px"}
     >
       <Heading
         size="lg"
@@ -50,7 +50,8 @@ const Trending = () => {
           paddingBottom="32px"
         >
           <Box fontSize={"16px"} color="#4B5563" cursor={"pointer"}>
-            <Text
+            {["New York", "San Francisco", "Chicago", "Las Vegas"].map((tab: any) => {
+              return <Text
               sx={trendingMenuStyle}
               _hover={{
                 background: "#134E4A",
@@ -58,38 +59,9 @@ const Trending = () => {
                 color: "#F0FDFA",
               }}
             >
-              New York
+              {tab}
             </Text>
-            <Text
-              sx={trendingMenuStyle}
-              _hover={{
-                background: "#134E4A",
-                borderRadius: "52px",
-                color: "#F0FDFA",
-              }}
-            >
-              San Francisco
-            </Text>
-            <Text
-              sx={trendingMenuStyle}
-              _hover={{
-                background: "#134E4A",
-                borderRadius: "52px",
-                color: "#F0FDFA",
-              }}
-            >
-              Chicago
-            </Text>
-            <Text
-              sx={trendingMenuStyle}
-              _hover={{
-                background: "#134E4A",
-                borderRadius: "52px",
-                color: "#F0FDFA",
-              }}
-            >
-              Las Vegas
-            </Text>
+            })}
           </Box>
           <Box>
             <Button
@@ -109,14 +81,14 @@ const Trending = () => {
             w={"49%"}
             direction="column"
             border={"1px solid #E5E7EB"}
-            borderRadius={"24px"}
+            borderRadius={16}
           >
             <Image
               src="https://thumbs.dreamstime.com/b/man-silhouette-stand-alone-beach-watching-romantic-colorful-sunset-73828239.jpg"
               alt="Hero Section"
               width="100%"
               height="388px"
-              borderTopRadius={"24px"}
+              borderTopRadius={16}
             />
             <Box w={"100%"} padding="20px">
               <Tag

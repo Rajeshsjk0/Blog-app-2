@@ -80,7 +80,7 @@ const Hero = () => {
                         lg: "120%",
                       }}
                       height="320px"
-                      borderRadius="24px"
+                      borderRadius="16px"
                       position={"absolute"}
                       background="rgba(255, 255, 255, 0.7)"
                       border="2px solid #FFFFFF"
@@ -154,7 +154,7 @@ const Hero = () => {
                       alt="Hero Section"
                       width="100%"
                       height="100%"
-                      borderRadius="24px"
+                      borderRadius="16px"
                     />
                   </Box>
                 </Flex>
@@ -185,7 +185,7 @@ const Hero = () => {
                         lg: "120%",
                       }}
                       height="320px"
-                      borderRadius="24px"
+                      borderRadius="16px"
                       position={"absolute"}
                       background="rgba(255, 255, 255, 0.7)"
                       border="2px solid #FFFFFF"
@@ -259,7 +259,7 @@ const Hero = () => {
                       alt="Hero Section"
                       width="100%"
                       height="100%"
-                      borderRadius="24px"
+                      borderRadius="16px"
                     />
                   </Box>
                 </Flex>

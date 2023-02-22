@@ -1,11 +1,7 @@
-import UserInfo from "@/components/shared/NewsCards/UserInfoContainer/UserInfo";
 import {
   Avatar,
-  Center,
   Flex,
   Heading,
-  Text,
-  Box,
   VStack,
   HStack,
   Tag,
@@ -14,23 +10,22 @@ import {
   Divider,
   Image,
   Container,
+  Center,
+  SimpleGrid,
+  Hide,
 } from "@chakra-ui/react";
-import {
-  Heart16Regular,
-  Comment16Regular,
-  Bookmark28Regular,
-} from "@fluentui/react-icons";
+import { Heart16Regular, Comment16Regular, Comment24Regular, Heart24Regular } from "@fluentui/react-icons";
 
 export default function DetailsHeader() {
   return (
-    <VStack spacing={5}>
-      <HStack spacing={5}>
+    <VStack spacing={{base : 5, md:18}}>
+      <HStack spacing={5} margin={5}>
         <Avatar
           padding={"0PX"}
           name={"userName"}
           src={"https://bit.ly/dan-abramov"}
         />
-        <Flex direction={"row"} paddingLeft="8px" justifyContent={"center"}>
+        <Flex paddingLeft="8px" justifyContent={"center"}>
           <Heading
             fontSize="16px"
             color={"#374151"}
@@ -42,54 +37,73 @@ export default function DetailsHeader() {
         </Flex>
       </HStack>
 
-      <Heading
-        fontSize="24px"
-        color={"#374151"}
-        fontWeight="500"
-        paddingBottom={"4px"}
+      <Center width={{ base: "90%", md: "70%" }}>
+        <Heading
+          fontSize={{base :"24px" , md: "40px"}}
+          color={"heading"}
+          fontWeight="500"
+          paddingBottom={"4px"}
+          textAlign="center"
+        >
+          {"Julio Urías does it all as Dodgers sweep in San Francisco"}
+        </Heading>
+      </Center>
+
+      <SimpleGrid
+        width={{ base: "90%", md: "50%"  }}
+        columns={{ base: 3, sm: 3, md: 5, lg: 5 }}
+        justifyContent={"space-between"}
+        gap="3"
+        w="full"
       >
-        {"Julio Urías does it all as Dodgers sweep in San Francisco"}
-      </Heading>
-      <HStack justifyContent={"space-between"}>
-        <HStack>
-          <Tag borderRadius={"10px"} fontSize="10px">
-            <TagLeftIcon boxSize="12px" as={Heart16Regular} />
+        <HStack w="full">
+          <Tag borderRadius={"10px"} fontSize="12px">
+            <TagLeftIcon boxSize="18px" as={Heart16Regular} />
             <TagLabel>223</TagLabel>
           </Tag>
-          <Tag borderRadius={"10px"} fontSize="10px">
-            <TagLeftIcon boxSize="12px" as={Comment16Regular} />
+          <Tag borderRadius={"10px"} fontSize="12px">
+            <TagLeftIcon boxSize="18px" as={Comment16Regular} />
             <TagLabel>112</TagLabel>
           </Tag>
         </HStack>
-        <Divider dir="vertical" w="1" />
+        <Hide below="sm">
+          <Center height="30px">
+            <Divider orientation="vertical" />
+          </Center>
+        </Hide>
         <HStack>
-          <Tag borderRadius={"10px"}>
-            <Heart16Regular />
+          <Tag  borderRadius={"10px"}>
+            <Heart24Regular />
           </Tag>
-          <Tag borderRadius={"10px"}>
-            <Comment16Regular />
+          <Tag  borderRadius={"10px"}>
+            <Comment24Regular />
           </Tag>
-          <Tag borderRadius={"10px"}>
-            <Heart16Regular />
+          <Tag  borderRadius={"10px"}>
+            <Heart24Regular />
           </Tag>
-          <Tag borderRadius={"10px"}>
-            <Comment16Regular />
+          <Tag  borderRadius={"10px"}>
+            <Comment24Regular />
           </Tag>
         </HStack>
-        <Divider dir="vertical" w="1" />
+        <Hide below="sm">
+          <Center height="30px">
+            <Divider orientation="vertical" />
+          </Center>
+        </Hide>
         <HStack>
-          <Tag borderRadius={"10px"} fontSize="10px">
-            <TagLeftIcon boxSize="12px" as={Heart16Regular} />
+          <Tag borderRadius={"10px"} fontSize="12px">
+            <TagLeftIcon boxSize="18px" as={Heart16Regular} />
             <TagLabel>223</TagLabel>
           </Tag>
-          <Tag borderRadius={"10px"} fontSize="10px">
-            <TagLeftIcon boxSize="12px" as={Comment16Regular} />
+          <Tag borderRadius={"10px"} fontSize="12px">
+            <TagLeftIcon boxSize="18px" as={Comment16Regular} />
             <TagLabel>112</TagLabel>
           </Tag>
         </HStack>
-      </HStack>
+      </SimpleGrid>
+
       <Image
-        src="https://thumbs.dreamstime.com/b/man-silhouette-stand-alone-beach-watching-romantic-colorful-sunset-73828239.jpg"
+        src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
         alt="Hero Section"
         width="100%"
       />

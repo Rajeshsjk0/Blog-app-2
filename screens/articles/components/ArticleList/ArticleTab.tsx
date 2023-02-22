@@ -13,13 +13,17 @@ import UserInfo from "@/components/shared/NewsCards/UserInfoContainer/UserInfo";
 import { Grid, GridItem } from "@chakra-ui/react";
 import { Tag, TagLabel, TagLeftIcon } from "@chakra-ui/react";
 import {
+  Bookmark16Regular,
   Bookmark28Regular,
   Comment16Regular,
+  Comment24Regular,
   Heart16Regular,
+  Heart24Regular,
 } from "@fluentui/react-icons";
 import TablePagination from "@/components/shared/TablePagination";
 import { ButtonGroup } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { Categories } from "@/screens/home/components";
 
 const ArticleTab = () => {
   const [total, setTotal] = useState<number>(0);
@@ -34,7 +38,7 @@ const ArticleTab = () => {
 
   return (
     <>
-      <SimpleGrid columns={{ base: 1, sm: 2, md: 4, lg: 4 }} gap={5}>
+      <SimpleGrid columns={{ base: 1, sm: 2, md: 3, lg: 4 }} gap={7} marginTop={5}>
         {Array(10)
           //@ts-ignore
           .fill()
@@ -53,38 +57,35 @@ const ArticleTab = () => {
                   borderTopRadius={24}
                 />
                 <Box padding={"12px"}>
-                  <Flex>
                     <UserInfo
                       style={{}}
                       image="https://bit.ly/dan-abramov"
                       userName="Joinh Davide"
                       date="May 20, 2021 · 3 min read"
                     />
-                  </Flex>
                   <Heading
-                    width={"72%"}
                     fontSize="14px"
-                    color="#111827"
                     fontWeight={600}
                     lineHeight={"24px"}
                     paddingBottom={"10px"}
+                    color="heading"
                   >
                     My Google Interview Experience (UX Design)
                   </Heading>
 
                   <HStack justifyContent={"space-between"}>
                     <HStack>
-                      <Tag borderRadius={"10px"} fontSize="10px">
-                        <TagLeftIcon boxSize="12px" as={Heart16Regular} />
+                      <Tag borderRadius={"10px"} >
+                        <TagLeftIcon  as={Heart24Regular} />
                         <TagLabel>223</TagLabel>
                       </Tag>
-                      <Tag borderRadius={"10px"} fontSize="10px">
-                        <TagLeftIcon boxSize="12px" as={Comment16Regular} />
+                      <Tag borderRadius={"10px"} >
+                        <TagLeftIcon  as={Comment24Regular} />
                         <TagLabel>112</TagLabel>
                       </Tag>
                     </HStack>
                     <Tag borderRadius={"10px"}>
-                      <TagLeftIcon boxSize="12px" as={Bookmark28Regular} />
+                     <Bookmark16Regular />
                     </Tag>
                   </HStack>
                 </Box>
