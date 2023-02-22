@@ -27,7 +27,7 @@ const Search = () => {
       borderRadius="45px"
     >
       <InputGroup>
-        <Input w="full" borderRadius="45px" pr="4.5rem" placeholder="Job" />
+        <Input w="full" borderRadius="45px" pr="4.5rem" placeholder="Guideline" />
         <InputLeftElement
           pointerEvents="none"
           children={<Search16Regular color="gray.300" />}
