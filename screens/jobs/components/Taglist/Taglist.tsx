@@ -31,7 +31,7 @@ const Taglist = () => {
       maxW="full"
       ml={{ sm: "50px", md: "297px" }}
       mr={{ sm: "50px", md: "297px" }}
-      mt={"67px"}
+      pt={20}
     >
       <Wrap>
         {tags.map((tag) => {

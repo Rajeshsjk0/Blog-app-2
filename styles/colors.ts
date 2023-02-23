@@ -7,4 +7,7 @@ export const colors = {
   lightBlueBackground: "#F7F9FF",
   smallText: "#4B5563",
   white: "#FFFFFF",
+  blueBack : "#1F2937",
+  blueTag : "#b0b0b010",
+  tagText : "#F3F4F6"
 };
