@@ -1,10 +1,11 @@
-import {  GuidelineList } from "./GuidelineList";
-import { DetailsHeader, DetailsSection, Options } from "./GuidelineDetails";
-import { Search } from "./Search";
+import { ArticleList, Subscribe } from "./ArticleList";
+import { CommentSection, ReletedSuggestions, Article } from "./ArticleDetails";
+import { Categories } from "./Categories";
 export {
-  GuidelineList,
-  DetailsHeader,
-  DetailsSection,
-  Options,
-  Search
+  ArticleList,
+  ReletedSuggestions,
+  Subscribe,
+  Categories,
+  CommentSection,
+  Article,
 };

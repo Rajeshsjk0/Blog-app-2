@@ -1,11 +1,12 @@
-import { Categories } from "../home/components";
-import { SopHeader, SopList, Subscribe } from "./components";
+import ArticleSearch from "@/components/shared/Article/ArticleSearch";
+import { Categories } from "./components";
+import {  ArticleList, Subscribe } from "./components";
 
-export default function Sops() {
+export default function SOPs() {
   return (
     <>
-      <SopHeader />
-      <SopList />
+      <ArticleSearch />
+      <ArticleList />
       <Categories />
       <Subscribe />
     </>

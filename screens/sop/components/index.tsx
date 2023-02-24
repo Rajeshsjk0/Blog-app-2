@@ -1,12 +1,11 @@
-import { SopHeader, SopList, Subscribe } from "./SopList";
-import { DetailsHeader, DetailsSection, Options } from "./SopDetails";
+import { ArticleList, Subscribe } from "./ArticleList";
+import { CommentSection, ReletedSuggestions, Article } from "./ArticleDetails";
 import { Categories } from "./Categories";
 export {
-  SopHeader,
-  SopList,
-  DetailsHeader,
-  DetailsSection,
-  Options,
+  ArticleList,
+  ReletedSuggestions,
   Subscribe,
   Categories,
+  CommentSection,
+  Article,
 };

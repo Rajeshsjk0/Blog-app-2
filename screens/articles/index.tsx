@@ -1,10 +1,11 @@
-import { Categories } from "../home/components";
-import { ArticleHeader, ArticleList, Subscribe } from "./components";
+import ArticleSearch from "@/components/shared/Article/ArticleSearch";
+import { Categories } from "./components";
+import {  ArticleList, Subscribe } from "./components";
 
 export default function Articles() {
   return (
     <>
-      <ArticleHeader />
+      <ArticleSearch />
       <ArticleList />
       <Categories />
       <Subscribe />

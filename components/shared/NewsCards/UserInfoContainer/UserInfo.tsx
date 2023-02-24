@@ -5,13 +5,13 @@ interface ChildComponentProps {
   userName: string;
   image: string;
   date: string;
-  style: React.CSSProperties;
+  style?: React.CSSProperties;
 }
 
 const UserInfo: React.FC<ChildComponentProps> = (props) => {
   const { image, userName, date, style } = props;
   return (
-    <Flex paddingBottom={"12px"}>
+    <Flex paddingBottom={"12px"} w="full">
       <Avatar padding={"0PX"} name={userName} src={image} />
       <Flex direction={"column"} paddingLeft="8px" justifyContent={"center"}>
         <Heading

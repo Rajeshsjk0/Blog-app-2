@@ -19,7 +19,7 @@ const Categories = () => {
 
   return (
     <Box w={"100%"} bg="greyColor" padding={10}>
-      <VStack spacing={5}>
+      <VStack spacing={5} >
         <Heading
           display="flex"
           justifyContent={"center"}
@@ -43,12 +43,13 @@ const Categories = () => {
         columns={{ base: 1, sm: 3, md: 4, lg: 5 }}
         gap={7}
         marginTop={10}
+         bg="greyColor"
       >
         {Array(10)
           //@ts-ignore
           .fill()
           .map((_, i) => (
-            <GridItem w="100%" cursor="pointer">
+            <GridItem w="100%" cursor="pointer" >
               <CategoryCard content={content} keyId={i} />
             </GridItem>
           ))}

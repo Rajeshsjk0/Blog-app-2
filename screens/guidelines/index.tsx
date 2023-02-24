@@ -1,21 +1,15 @@
-import { Box } from "@chakra-ui/react";
-import {
-  GuidelineList,
-  Search,
-} from "./components";
+import ArticleSearch from "@/components/shared/Article/ArticleSearch";
+import { Categories } from "./components";
+import {  ArticleList, Subscribe } from "./components";
 
 export default function Guidelines() {
   return (
-    <Box w={"full"}>
-      <Box
-        bg="lightBlueBackground"
-        h="120px"
-      />
-
-      <Box bg="white" >
-        <Search />
-        <GuidelineList />
-      </Box>
-    </Box>
+    <>
+      <ArticleSearch />
+      <ArticleList />
+      <Categories />
+      <Subscribe />
+    </>
   );
 }
+4;

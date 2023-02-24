@@ -1,3 +1,10 @@
+import { WebsiteLayout } from "@/layouts";
+import RegisterScreen from "@/screens/register";
+
 export default function Register() {
-  return <></>;
+  return (
+    <WebsiteLayout>
+      <RegisterScreen />
+    </WebsiteLayout>
+  );
 }

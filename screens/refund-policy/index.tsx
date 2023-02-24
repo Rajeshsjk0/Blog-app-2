@@ -1,11 +1,11 @@
 import { Box, Text, Center, Card, Heading } from "@chakra-ui/react";
 
-export default function PrivacyPolicyScreen() {
+export default function RefundPolicy() {
   return (
     <Box w={"full"}>
       <Box bg="lightBlueBackground" h="280px">
         <Center p={20} flexDirection="column" gap={3}>
-          <Heading textAlign={"center"}>Pricavy Policy</Heading>
+          <Heading textAlign={"center"}>Refund Policy</Heading>
           <Text textAlign={"center"}>
             Welcome to our blog magazine Community
           </Text>
@@ -96,7 +96,7 @@ export default function PrivacyPolicyScreen() {
             pellentesque sit. Vulputate accumsan dolor diam ornare nec nibh.
             Tellus egestas orci rhoncus vel ipsum massa accumsan sed
             suspendisse. Dolor luctus condimentum interdum purus arcu vitae
-            lacus.{" "}
+            lacus.
           </Text>
         </Card>
       </Center>

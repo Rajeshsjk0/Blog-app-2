@@ -11,10 +11,11 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { BadgeFilled } from "@fluentui/react-icons";
+import UserInfo from "@/components/shared/NewsCards/UserInfoContainer/UserInfo";
 
 const JobCard = () => {
   return (
-    <Card maxW="md" bg={"white"}>
+    <Card maxW="md" bg={"white"} borderRadius={24}>
       <CardHeader>
         <Flex gap="4">
           <Flex
@@ -24,30 +25,11 @@ const JobCard = () => {
             flexWrap="wrap"
             overflowWrap="anywhere"
           >
-            <Avatar name="Segun Adebayo" src="https://bit.ly/sage-adebayo" />
-            <Box>
-              <Heading
-                size="sm"
-                color={"subHeading"}
-                fontFamily="poppins"
-                fontWeight={"600"}
-                fontSize="0.875rem"
-              >
-                Segun Adebayo
-              </Heading>
-              <Text
-                color={"paragraphs"}
-                fontFamily="poppins"
-                fontWeight={"400"}
-                fontSize="1em"
-              >
-                Creator, Chakra UI
-              </Text>
-            </Box>
+            <UserInfo userName=" Segun Adebayo" date=" Creator, Chakra UI" image="https://bit.ly/sage-adebayo" />
+           
           </Flex>
           <Text
             color={"paragraphs"}
-            fontFamily="poppins"
             fontWeight={"400"}
             fontSize="1em"
           >
@@ -58,7 +40,6 @@ const JobCard = () => {
       <CardBody>
         <Text
           color={"heading"}
-          fontFamily="poppins"
           fontWeight={"400"}
           fontSize="0.875rem"
         >
@@ -86,7 +67,6 @@ const JobCard = () => {
             <Text
               as="span"
               color={"heading"}
-              fontFamily="poppins"
               fontWeight={"400"}
               fontSize="0.875rem"
             >

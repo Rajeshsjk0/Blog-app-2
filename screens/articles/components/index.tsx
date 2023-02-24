@@ -1,4 +1,11 @@
-import { ArticleHeader, ArticleList, Subscribe } from "./ArticleList";
-import { DetailsHeader, DetailsSection , Options } from "./ArticleDetails";
-import {Categories} from "./Categories";
-export { ArticleHeader, ArticleList, DetailsHeader, DetailsSection, Options, Subscribe , Categories};
+import { ArticleList, Subscribe } from "./ArticleList";
+import { CommentSection, ReletedSuggestions, Article } from "./ArticleDetails";
+import { Categories } from "./Categories";
+export {
+  ArticleList,
+  ReletedSuggestions,
+  Subscribe,
+  Categories,
+  CommentSection,
+  Article,
+};

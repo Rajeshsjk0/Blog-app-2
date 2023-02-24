@@ -39,7 +39,7 @@ const Taglist = () => {
             <WrapItem>
               <Tag size="sm" mr="2" mb="2" bg="white" color="paragraphs">
                 <TagLabel
-                  fontFamily={"smallFont"}
+                  color={"smallFont"}
                   fontSize={"0.875rem"}
                   lineHeight="20px"
                 >
@@ -52,7 +52,7 @@ const Taglist = () => {
         <WrapItem>
           <Tag size="sm" mr="2" mb="2" bg="white" color="paragraphs">
             <TagLabel
-              fontFamily={"smallFont"}
+              color={"smallFont"}
               fontSize={"0.875rem"}
               lineHeight="20px"
             >
