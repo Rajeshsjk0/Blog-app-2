@@ -12,24 +12,28 @@ import {
   InputRightElement,
   Show,
   Text,
+  Image,
   VStack,
 } from "@chakra-ui/react";
 import { ArrowRight16Regular, Search16Regular } from "@fluentui/react-icons";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function ArticleSearch() {
   return (
-    <Flex padding={5}>
+    <Flex padding={5} w="full">
       <Flex
         direction={"column"}
         justifyContent="center"
         height="full"
         alignItems={"center"}
+        w="full"
       >
         <Hide below="md">
           <Image
-            src={require("@/assets/bg.png")}
+            width={"100%"}
+            height={550}
+            objectFit="cover"
+            src={"https://www.tourhiker.com/wp-content/uploads/2021/03/Tour-Hiker-7-Best-Places-to-Visit-in-Tokyo-Tokyo-Sky-Tree-1536x1040.jpg"}
             alt={""}
             style={{ borderRadius: "45px" }}
           />
