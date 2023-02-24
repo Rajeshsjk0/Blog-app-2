@@ -18,7 +18,7 @@ export default function Options() {
       <Box bg="#F9FAFB" p="4">
         <HStack justifyContent={"space-between"}>
           <Text fontWeight="semibold">🏷 Discover more tags</Text>
-          <Text color={"brand"} fontWeight="semibold" fontSize={"sm"}>
+          <Text cursor={"pointer"} color={"brand"} fontWeight="semibold" fontSize={"sm"}>
             View all
           </Text>
         </HStack>
@@ -27,8 +27,8 @@ export default function Options() {
             //@ts-ignore
             .fill()
             .map((_, i) => (
-              <Tag>
-                <TagLabel fontWeight={"regular"}>Aliquet neque</TagLabel>
+              <Tag key={i}>
+                <TagLabel fontWeight={"regular"}>Aliquet</TagLabel>
               </Tag>
             ))}
         </Wrap>
@@ -36,7 +36,7 @@ export default function Options() {
       <Box bg="#F9FAFB" p="4">
         <HStack justifyContent={"space-between"}>
           <Text fontWeight="semibold">🏷 Discover Authors</Text>
-          <Text color={"brand"} fontWeight="semibold" fontSize={"sm"}>
+          <Text cursor={"pointer"} color={"brand"} fontWeight="semibold" fontSize={"sm"}>
             View all
           </Text>
         </HStack>

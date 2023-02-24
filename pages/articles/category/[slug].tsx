@@ -1,1 +1,3 @@
-export {};
+export default function CategoryDetails() {
+  return <></>;
+}

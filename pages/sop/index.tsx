@@ -1,7 +1,7 @@
 import { WebsiteLayout } from "@/layouts";
 import Sops from "@/screens/sop";
 
-export default function ArticlePage() {
+export default function SOPPage() {
   return (
     <>
       <WebsiteLayout>

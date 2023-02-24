@@ -1,15 +1,7 @@
-import UserInfo from "@/components/shared/NewsCards/UserInfoContainer/UserInfo";
 import {
-  Text,
   Box,
-  HStack,
-  Tag,
-  TagLabel,
   Grid,
   GridItem,
-  Wrap,
-  VStack,
-  Container,
 } from "@chakra-ui/react";
 import Article from "./Article";
 import Options from "./ArticleOptions";

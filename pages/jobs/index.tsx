@@ -1,7 +1,7 @@
 import { WebsiteLayout } from "@/layouts";
 import Jobs from "@/screens/jobs";
 
-export default function ArticlePage() {
+export default function JobPage() {
   return (
     <>
       <WebsiteLayout>
