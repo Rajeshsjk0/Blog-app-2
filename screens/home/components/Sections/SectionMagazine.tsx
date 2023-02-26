@@ -35,33 +35,43 @@ const Trending = () => {
       >
         Trending on Ncmaz
       </Heading>
-      <Text fontSize="16px" color="#6B7280" paddingBottom={"46px"}>
+      <Text
+        fontSize="16px"
+        color="#6B7280"
+        paddingBottom={{ base: "20px", md: "46px" }}
+      >
         Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
       </Text>
       <Box w={"100%"}>
         <Flex
           justifyContent={"space-between"}
-          alignItems={"center"}
-          paddingBottom="32px"
+          alignItems={{ base: "flex-start", md: "center" }}
+          direction={{ base: "column", md: "row" }}
+          paddingBottom={{ base: "20px", md: "32px" }}
         >
-          <Box fontSize={"16px"} color="#4B5563" cursor={"pointer"}>
+          <Flex flexWrap="wrap" overflowX="auto">
             {["New York", "San Francisco", "Chicago", "Las Vegas"].map(
               (tab: any) => {
                 return (
                   <Text
+                    key={tab}
                     sx={trendingMenuStyle}
                     _hover={{
                       background: "#134E4A",
                       borderRadius: "52px",
                       color: "#F0FDFA",
                     }}
+                    width="fit-content"
+                    whiteSpace="nowrap"
+                    mr={2} // add margin between items
                   >
                     {tab}
                   </Text>
                 );
               }
             )}
-          </Box>
+          </Flex>
+
           <Box>
             <Button
               rightIcon={<ArrowRight12Filled />}

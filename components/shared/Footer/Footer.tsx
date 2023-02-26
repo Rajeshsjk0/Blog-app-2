@@ -1,4 +1,4 @@
-import { Box, Container, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 
 import { ChevronRight16Regular } from "@fluentui/react-icons";
 

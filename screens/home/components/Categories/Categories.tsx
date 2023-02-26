@@ -18,7 +18,7 @@ const Categories = () => {
   };
 
   return (
-    <Box w={"100%"} marginTop={110} padding={10}>
+    <Box w={"100%"} marginTop={{ base: 30, md: 110 }} padding={10}>
       <VStack spacing={5}>
         <Heading
           display="flex"

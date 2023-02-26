@@ -13,7 +13,7 @@ const HomeScreen = () => {
     >
       <Hero />
       <Categories />
-      {/* <SectionMagazine /> */}
+      <SectionMagazine />
       <Videos />
       <SectionVerticals />
     </Flex>
