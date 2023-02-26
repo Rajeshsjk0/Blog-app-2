@@ -29,7 +29,7 @@ const FullLengthImage: React.FC<ChildComponentProps> = (props) => {
         </Box>
         <Heading
           fontSize="16px"
-          color="#1F2937"
+          color="blueBack"
           fontWeight={600}
           lineHeight={"24px"}
           paddingBottom={"12px"}
@@ -52,7 +52,7 @@ export default FullLengthImage;
 </Box>
 <Heading
 fontSize="16px"
-color="#1F2937"
+color="blueBack"
 fontWeight={600}
 lineHeight={"24px"}
 paddingBottom={"12px"}

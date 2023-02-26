@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <NextNProgress color="#4F46E5" height={4} />
+      <NextNProgress color="brand" height={4} />
       <ChakraProvider theme={theme}>
         <Component {...pageProps} />
       </ChakraProvider>

@@ -19,7 +19,7 @@ const ImageOnTop = () => {
         <Heading
           width={"72%"}
           fontSize="14px"
-          color="#111827"
+          color="heading"
           fontWeight={600}
           lineHeight={"24px"}
           paddingBottom={"10px"}

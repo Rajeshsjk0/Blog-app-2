@@ -26,7 +26,7 @@ const IconInfoContainer = () => {
           fontWeight="400"
           fontSize="12px"
           lineHeight={"16px"}
-          color="#374151"
+          color="subHeading"
         >
           2.2k
         </Text>
@@ -46,7 +46,7 @@ const IconInfoContainer = () => {
           fontWeight="400"
           fontSize="12px"
           lineHeight={"16px"}
-          color="#374151"
+          color="subHeading"
         >
           112
         </Text>

@@ -29,7 +29,7 @@ const Trending = () => {
       <Heading
         size="lg"
         fontSize="36px"
-        color={"#1F2937"}
+        color={"blueBack"}
         fontWeight="600"
         paddingBottom={"8px"}
       >
@@ -37,7 +37,7 @@ const Trending = () => {
       </Heading>
       <Text
         fontSize="16px"
-        color="#6B7280"
+        color="paragraphs"
         paddingBottom={{ base: "20px", md: "46px" }}
       >
         Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
@@ -75,7 +75,7 @@ const Trending = () => {
           <Box>
             <Button
               rightIcon={<ArrowRight12Filled />}
-              color={"#4B5563"}
+              color={"smallText"}
               fontSize="16px"
               borderRadius={"66px"}
               borderColor="#E5E7EB"
@@ -115,7 +115,7 @@ const Trending = () => {
             <Heading
               paddingLeft={"20px"}
               fontSize="24px"
-              color={"#111827"}
+              color={"heading"}
               fontWeight="600"
               lineHeight={"32px"}
               paddingBottom={"8px"}
@@ -125,7 +125,7 @@ const Trending = () => {
             <Text
               paddingLeft={"20px"}
               fontSize="14px"
-              color="#6B7280"
+              color="paragraphs"
               paddingBottom={"20px"}
             >
               An UI/UX case study of an emerging local bicycle brand
@@ -143,13 +143,13 @@ const Trending = () => {
               >
                 <Heading
                   fontSize="14px"
-                  color={"#374151"}
+                  color={"subHeading"}
                   fontWeight="500"
                   paddingBottom={"4px"}
                 >
                   Joinh Davide
                 </Heading>
-                <Text fontSize="12px" color="#6B7280">
+                <Text fontSize="12px" color="paragraphs">
                   May 20, 2021 · 3 min read
                 </Text>
               </Flex>

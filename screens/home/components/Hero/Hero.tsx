@@ -52,7 +52,7 @@ const Hero = () => {
                   borderRadius="16px"
                   position={"absolute"}
                   background="rgba(255, 255, 255, 0.7)"
-                  border="2px solid #FFFFFF"
+                  border="2px solid white"
                   boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)"
                   backdropFilter="blur(37px)"
                   left={"0"}
@@ -85,7 +85,7 @@ const Hero = () => {
                     </Box>
                     <Heading
                       fontSize={{ base: "14px", md: "20px", lg: "24px" }}
-                      color={"#1F2937"}
+                      color={"blueBack"}
                       fontWeight="500"
                       lineHeight={{ base: "20px", md: "32px" }}
                       pl={{ base: "10px", md: "40px" }}
@@ -145,7 +145,7 @@ const Hero = () => {
                   borderRadius="16px"
                   position={"absolute"}
                   background="rgba(255, 255, 255, 0.7)"
-                  border="2px solid #FFFFFF"
+                  border="2px solid white"
                   boxShadow="0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04)"
                   backdropFilter="blur(37px)"
                   left={"0"}
@@ -178,7 +178,7 @@ const Hero = () => {
                     </Box>
                     <Heading
                       fontSize={{ base: "14px", md: "20px", lg: "24px" }}
-                      color={"#1F2937"}
+                      color={"blueBack"}
                       fontWeight="500"
                       lineHeight={{ base: "20px", md: "32px" }}
                       pl={{ base: "10px", md: "40px" }}

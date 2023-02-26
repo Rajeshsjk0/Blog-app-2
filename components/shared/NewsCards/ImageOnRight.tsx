@@ -16,7 +16,7 @@ const RightCard = (props: any) => {
             </Box>
             <Heading
               fontSize="16px"
-              color="#1F2937"
+              color="blueBack"
               fontWeight={600}
               lineHeight={"24px"}
               paddingBottom={"12px"}

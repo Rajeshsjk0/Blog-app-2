@@ -7,7 +7,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
       fontWeight={"700"}
       fontSize={"14px"}
       lineHeight={"20px"}
-      color={"#1F2937"}
+      color={"blueBack"}
     >
       {children}
     </Text>

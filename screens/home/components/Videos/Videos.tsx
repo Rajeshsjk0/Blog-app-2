@@ -42,7 +42,7 @@ const Videos: React.FC = () => {
           fontWeight="600"
           fontSize="36px"
           lineHeight={"40px"}
-          color="#111827"
+          color="heading"
         >
           The Videos
         </Heading>
@@ -53,7 +53,7 @@ const Videos: React.FC = () => {
           fontWeight="400"
           fontSize="18px"
           lineHeight={"28px"}
-          color="#4B5563"
+          color="smallText"
         >
           Read and share new perspectives on just about any topic. Everyone’s
           welcome.
@@ -125,11 +125,11 @@ const Videos: React.FC = () => {
                     display={"flex"}
                     justifyContent={"center"}
                     alignItems="center"
-                    backgroundColor={"#FFFFFF"}
+                    backgroundColor={"white"}
                     borderRadius="30%"
                   >
                     <Box>
-                      <Play12Regular color="#4B5563" />
+                      <Play12Regular color="smallText" />
                     </Box>
                   </Box>
                 </Box>

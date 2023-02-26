@@ -89,14 +89,14 @@ const SectionVerticals: React.FC = () => {
             fontWeight="600"
             fontSize="36px"
             lineHeight={"40px"}
-            color="#111827"
+            color="heading"
           >
             Latest Articles
           </Heading>
           <Flex justifyContent="space-between" alignItems={"center"} gap="20px">
             <Text
               fontSize="14px"
-              color={"#1F2937"}
+              color={"blueBack"}
               fontFamily="Inter"
               fontWeight="400"
               lineHeight={"20px"}
@@ -117,7 +117,7 @@ const SectionVerticals: React.FC = () => {
           fontWeight="400"
           fontSize="18px"
           lineHeight={"28px"}
-          color="#4B5563"
+          color="smallText"
         >
           Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
         </Text>

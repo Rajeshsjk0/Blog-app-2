@@ -1,4 +1,17 @@
-import { Flex, Heading, Text, Image, Avatar, Center, Divider, Hide, HStack, Tag, TagLabel, TagLeftIcon } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Text,
+  Image,
+  Avatar,
+  Center,
+  Divider,
+  Hide,
+  HStack,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+} from "@chakra-ui/react";
 import { Heart16Regular, Comment16Regular } from "@fluentui/react-icons";
 import React from "react";
 
@@ -8,7 +21,7 @@ import React from "react";
 //   subTitle: string;
 // }
 
-const ArticleHead  =() => {
+const ArticleHead = () => {
   return (
     <>
       <>
@@ -19,7 +32,7 @@ const ArticleHead  =() => {
             src={"https://bit.ly/dan-abramov"}
           />
           <Flex paddingLeft="8px" justifyContent={"center"}>
-            <Heading fontSize="16px" color={"#374151"} fontWeight="500">
+            <Heading fontSize="16px" color={"subHeading"} fontWeight="500">
               {"Joinh Davide    May 20, 2021  ·  3 min read"}
             </Heading>
           </Flex>

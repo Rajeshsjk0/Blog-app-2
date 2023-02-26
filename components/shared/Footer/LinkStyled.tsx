@@ -12,7 +12,7 @@ const LinkStyled = ({ prop1, children }: Props) => {
       fontWeight={"400"}
       fontSize={"14px"}
       lineHeight={"20px"}
-      color={"#1F2937"}
+      color={"blueBack"}
       textDecoration={"none"}
       _hover={{ textDecoration: "none" }}
       fontFamily="inter"

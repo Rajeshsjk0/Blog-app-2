@@ -43,12 +43,12 @@ export default function Footer() {
                 p={"0"}
               >
                 <SocialButton label={"Twitter"} href={"#"}>
-                  <ChevronRight16Regular color="#374151" height={"14px"} />
+                  <ChevronRight16Regular color="subHeading" height={"14px"} />
                 </SocialButton>
                 <Text
                   display={"flex"}
-                  // backgroundColor={"#374151"}
-                  color={"#374151"}
+                  // backgroundColor={"subHeading"}
+                  color={"subHeading"}
                   alignItems={"center"}
                   justifyContent={"center"}
                   fontWeight={"400"}
@@ -67,12 +67,12 @@ export default function Footer() {
                 p={"0"}
               >
                 <SocialButton label={"Twitter"} href={"#"}>
-                  <ChevronRight16Regular color="#374151" height={"14px"} />
+                  <ChevronRight16Regular color="subHeading" height={"14px"} />
                 </SocialButton>
                 <Text
                   display={"flex"}
-                  // backgroundColor={"#374151"}
-                  color={"#374151"}
+                  // backgroundColor={"subHeading"}
+                  color={"subHeading"}
                   alignItems={"center"}
                   justifyContent={"center"}
                   fontWeight={"400"}
@@ -91,12 +91,12 @@ export default function Footer() {
                 p={"0"}
               >
                 <SocialButton label={"Twitter"} href={"#"}>
-                  <ChevronRight16Regular color="#374151" height={"14px"} />
+                  <ChevronRight16Regular color="subHeading" height={"14px"} />
                 </SocialButton>
                 <Text
                   display={"flex"}
-                  // backgroundColor={"#374151"}
-                  color={"#374151"}
+                  // backgroundColor={"subHeading"}
+                  color={"subHeading"}
                   alignItems={"center"}
                   justifyContent={"center"}
                   fontWeight={"400"}
@@ -115,12 +115,12 @@ export default function Footer() {
                 p={"0"}
               >
                 <SocialButton label={"Twitter"} href={"#"}>
-                  <ChevronRight16Regular color="#374151" height={"14px"} />
+                  <ChevronRight16Regular color="subHeading" height={"14px"} />
                 </SocialButton>
                 <Text
                   display={"flex"}
-                  // backgroundColor={"#374151"}
-                  color={"#374151"}
+                  // backgroundColor={"subHeading"}
+                  color={"subHeading"}
                   alignItems={"center"}
                   justifyContent={"center"}
                   fontWeight={"400"}
