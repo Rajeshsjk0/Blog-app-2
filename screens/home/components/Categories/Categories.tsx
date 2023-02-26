@@ -40,7 +40,7 @@ const Categories = () => {
         </Text>
       </VStack>
       <SimpleGrid
-        columns={{ base: 1, sm: 3, md: 4, lg: 5 }}
+        columns={{ base: 2, sm: 3, md: 4, lg: 5 }}
         gap={7}
         marginTop={10}
       >

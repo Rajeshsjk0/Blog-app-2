@@ -24,6 +24,18 @@ const SectionVerticals: React.FC = () => {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
     },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+    },
+    {
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg",
+    },
   ];
 
   const sliderRef = useRef<Slider>(null);
@@ -37,16 +49,37 @@ const SectionVerticals: React.FC = () => {
   };
 
   var settings = {
-    // dots: true,
-    // infinite: true,
-    // speed: 500,
+    infinite: true,
     arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <Box w={"100%"} paddingTop="128px">
+    <Box w={"100%"} paddingTop={{ base: "10px", md: "128px" }}>
       <Box w={"100%"}>
         <Flex w={"100%"} justifyContent="space-between" alignItems={"center"}>
           <Heading
@@ -89,48 +122,21 @@ const SectionVerticals: React.FC = () => {
           Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
         </Text>
       </Box>
-      <Slider ref={sliderRef} {...settings}>
-        <div>
-          <Flex
-            w={"100%"}
-            direction="row"
-            marginTop={"32px"}
-            justifyContent="space-between"
-          >
-            {newses.map((news) => {
-              return (
-                <FullLengthImage
-                  style={{ paddingTop: "32px" }}
-                  image="https://bit.ly/dan-abramov"
-                  userName="Joinh Davide"
-                  date="May 20, 2021 · 3 min read"
-                  newsImage={news.image}
-                />
-              );
-            })}
-          </Flex>
-        </div>
-        <div>
-          <Flex
-            w={"100%"}
-            direction="row"
-            marginTop={"32px"}
-            justifyContent="space-between"
-          >
-            {newses.map((news) => {
-              return (
-                <FullLengthImage
-                  style={{ paddingTop: "32px" }}
-                  image="https://bit.ly/dan-abramov"
-                  userName="Joinh Davide"
-                  date="May 20, 2021 · 3 min read"
-                  newsImage={news.image}
-                />
-              );
-            })}
-          </Flex>
-        </div>
-      </Slider>
+      <Box marginTop={20}>
+        <Slider ref={sliderRef} {...settings}>
+          {newses.map((news) => {
+            return (
+              <FullLengthImage
+                style={{ paddingTop: "32px" }}
+                image="https://bit.ly/dan-abramov"
+                userName="Joinh Davide"
+                date="May 20, 2021 · 3 min read"
+                newsImage="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+              />
+            );
+          })}
+        </Slider>
+      </Box>
     </Box>
   );
 };

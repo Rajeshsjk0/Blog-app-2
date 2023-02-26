@@ -32,7 +32,7 @@ const Videos: React.FC = () => {
       direction={"column"}
       alignItems="flex-start"
       gap={"32px"}
-      marginTop="128px"
+      marginTop={{ base: "60px", md: "128px" }}
     >
       <Box w={"100%"}>
         <Heading
@@ -47,7 +47,7 @@ const Videos: React.FC = () => {
           The Videos
         </Heading>
         <Text
-          w={"40.36%"}
+          w={{ base: "full", lg: "40.36%" }}
           fontStyle="normal"
           fontFamily={"Poppins"}
           fontWeight="400"
@@ -59,44 +59,49 @@ const Videos: React.FC = () => {
           welcome.
         </Text>
       </Box>
-      <Box w={"100%"} height={"689px"} position="relative">
+      <Box
+        w={"100%"}
+        height={{ base: "500px", md: "689px" }}
+        position="relative"
+      >
         <Box
           position={"absolute"}
-          right={"0"}
-          width="50%"
-          backgroundColor={"#C7D2FE"}
-          height="100%"
-          borderRadius={"50px"}
+          top={{ base: "300px", md: "0px" }}
+          right={{ md: "0" }}
+          width={{ base: "full", md: "50%" }}
+          backgroundColor={"rgba(199, 210, 254, 0.2)"}
+          height={{ base: "20%", md: "100%" }}
+          borderRadius={{ base: "20px", md: "50px" }}
           backdropFilter="blur(40px)"
         ></Box>
         <Box
           position={"absolute"}
           left={"0"}
-          width="80.14%"
+          width={{ base: "full", md: "80.14%" }}
           //   backgroundColor={"Green"}
-          top="53px"
-          height={" 585px"}
+          top={{ base: 10, md: "53px" }}
+          height={{ base: "300px", md: "585px" }}
           bg="lightcoral"
         >
           Selected Video is {SelectedVideo + 1}
         </Box>
         <Flex
-          direction={"column"}
+          direction={{ base: "row", md: "column" }}
           alignItems="flex-end"
           position={"absolute"}
           p="0"
-          gap={"20px"}
-          top="53px"
-          right={"4.70%"}
-          h="585px"
-          width="12.71%"
+          gap={{ base: "10px", md: "20px" }}
+          top={{ base: "350px", md: "53px" }}
+          right={{ md: "4.70%" }}
+          h={{ base: "auto", md: "585px" }}
+          width={{ base: "auto", md: "12.71%" }}
         >
           {imageArray.map((imageObj, key) => {
             return (
               <Box
                 key={key}
-                w={"100%"}
-                h="22.5%"
+                w={{ base: "80%", md: "100%" }}
+                h={{ base: "30%", lg: "22.5%" }}
                 position={"relative"}
                 onClick={() => onClickHandler(key)}
               >

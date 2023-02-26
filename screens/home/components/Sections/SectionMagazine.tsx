@@ -8,7 +8,7 @@ import {
   Image,
   Tag,
   Avatar,
-  Grid,
+  SimpleGrid,
   GridItem,
 } from "@chakra-ui/react";
 import { NewsCardWithRightImage } from "@/components/index";
@@ -25,12 +25,7 @@ const Trending = () => {
     cursor: "pointer",
   };
   return (
-    <Flex
-      w="100%"
-      direction={"column"}
-      borderRadius="40px"
-      paddingTop={"20px"}
-    >
+    <Flex w="100%" direction={"column"} borderRadius="40px" paddingTop={"20px"}>
       <Heading
         size="lg"
         fontSize="36px"
@@ -50,18 +45,22 @@ const Trending = () => {
           paddingBottom="32px"
         >
           <Box fontSize={"16px"} color="#4B5563" cursor={"pointer"}>
-            {["New York", "San Francisco", "Chicago", "Las Vegas"].map((tab: any) => {
-              return <Text
-              sx={trendingMenuStyle}
-              _hover={{
-                background: "#134E4A",
-                borderRadius: "52px",
-                color: "#F0FDFA",
-              }}
-            >
-              {tab}
-            </Text>
-            })}
+            {["New York", "San Francisco", "Chicago", "Las Vegas"].map(
+              (tab: any) => {
+                return (
+                  <Text
+                    sx={trendingMenuStyle}
+                    _hover={{
+                      background: "#134E4A",
+                      borderRadius: "52px",
+                      color: "#F0FDFA",
+                    }}
+                  >
+                    {tab}
+                  </Text>
+                );
+              }
+            )}
           </Box>
           <Box>
             <Button
@@ -76,9 +75,9 @@ const Trending = () => {
             </Button>
           </Box>
         </Flex>
-        <Flex w={"100%"} justifyContent="space-between">
+        <SimpleGrid columns={{ sm: 1, lg: 2 }} w={"100%"} spacing={6}>
           <Flex
-            w={"49%"}
+            // w={"49%"}
             direction="column"
             border={"1px solid #E5E7EB"}
             borderRadius={16}
@@ -154,14 +153,14 @@ const Trending = () => {
               <MetaInfoIcon />
             </Flex>
           </Flex>
-          <Flex w={"49%"} direction="column">
+          <Flex direction="column">
             <NewsCardWithRightImage style={{ paddingBottom: "20px" }} />
             <NewsCardWithRightImage style={{ paddingBottom: "20px" }} />
             <NewsCardWithRightImage />
           </Flex>
-        </Flex>
+        </SimpleGrid>
         <Box paddingTop={"20px"}>
-          <Grid templateColumns="repeat(4, 1fr)" gap={6}>
+          <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} gap={6}>
             <GridItem>
               <NewsCardWithTopImage />
             </GridItem>
@@ -174,7 +173,7 @@ const Trending = () => {
             <GridItem>
               <NewsCardWithTopImage />
             </GridItem>
-          </Grid>
+          </SimpleGrid>
         </Box>
       </Box>
     </Flex>
